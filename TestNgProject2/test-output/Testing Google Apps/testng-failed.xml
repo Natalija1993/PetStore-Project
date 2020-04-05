@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Testing Google Apps]">
+  <test thread-count="5" name="Regression(failed)">
+    <classes>
+      <class name="test.RegisrationTest">
+        <methods>
+          <include name="registerTest"/>
+          <include name="numericValueTest"/>
+          <include name="setup"/>
+          <include name="afterClass"/>
+          <include name="repeatPasswordTest"/>
+          <include name="incompleteRegistrationTest"/>
+          <include name="emailTest"/>
+          <include name="registrationWithoutPasswordTest"/>
+        </methods>
+      </class> <!-- test.RegisrationTest -->
+      <class name="test.SignInTest">
+        <methods>
+          <include name="afterClass"/>
+          <include name="setup"/>
+          <include name="signInTest"/>
+        </methods>
+      </class> <!-- test.SignInTest -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [Testing Google Apps] -->
